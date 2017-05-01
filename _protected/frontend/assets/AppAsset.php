@@ -26,13 +26,18 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@themes';
-    
+
     public $css = [
         'css/site.css',
         'css/custom.css',
+        'js\angular\angular\angular-csp.css',
     ];
     public $js = [
         'js\modernizr.custom.86080.js',
+        'js\angular\angular\angular.min.js',
+        'js\angular\angular-animate\angular-animate.min.js',
+        'js\angular\angular-route\angular-route.min.js',
+        'js\app.js',
     ];
     
     public $depends = [

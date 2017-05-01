@@ -24,7 +24,7 @@ AppAsset::register($this);
 <style>
 
 </style>
-<body>
+<body ng-app="spaApp" ng-controller="index">
     <?php $this->beginBody() ?>
     <ul class="cb-slideshow">
         <li><span>Image 01</span><div><h3>se·ren·i·ty</h3></div></li>
@@ -35,7 +35,7 @@ AppAsset::register($this);
         <li><span>Image 06</span><div><h3>re·lax·a·tion</h3></div></li>
     </ul>
     <div class="clr"></div>
-    <div class="wrap">
+    <div class="wrap" >
         <?php
             NavBar::begin([
                 'brandLabel' => Yii::t('app', Yii::$app->name),
@@ -90,6 +90,7 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+        {{888}}
         <?= $content ?>
         </div>
     </div>

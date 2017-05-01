@@ -6,11 +6,34 @@ $this->title = Yii::t('app', Yii::$app->name);
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
 
-        <p class="lead">You have successfully installed Yii2 improved application template</p>
+                <div class="item">
+                    <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+                </div>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.freetuts.org/tutorial/view?id=6">Read our tutorial</a></p>
+                <div class="item">
+                    <img src="ny.jpg" alt="New york" style="width:100%;">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
     <div class="body-content">
