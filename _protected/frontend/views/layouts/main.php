@@ -21,18 +21,16 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<style>
 
-</style>
-<body ng-app="spaApp" ng-controller="index">
+<body ng-app="spaApp"  ng-controller="index">
     <?php $this->beginBody() ?>
     <ul class="cb-slideshow">
-        <li><span>Image 01</span><div><h3>se·ren·i·ty</h3></div></li>
-        <li><span>Image 02</span><div><h3>com·po·sure</h3></div></li>
-        <li><span>Image 03</span><div><h3>e·qua·nim·i·ty</h3></div></li>
-        <li><span>Image 04</span><div><h3>bal·ance</h3></div></li>
-        <li><span>Image 05</span><div><h3>qui·e·tude</h3></div></li>
-        <li><span>Image 06</span><div><h3>re·lax·a·tion</h3></div></li>
+        <li><span>Image 01</span><div><h3>Security</h3></div></li>
+        <li><span>Image 02</span><div><h3>Confidence</h3></div></li>
+        <li><span>Image 03</span><div><h3>Reliability</h3></div></li>
+        <li><span>Image 04</span><div><h3>Trust</h3></div></li>
+        <li><span>Image 05</span><div><h3>Friendly</h3></div></li>
+        <li><span>Image 06</span><div><h3>Professional</h3></div></li>
     </ul>
     <div class="clr"></div>
     <div class="wrap" >
@@ -104,5 +102,35 @@ AppAsset::register($this);
 
     <?php $this->endBody() ?>
 </body>
+<script>
+    var app = angular.module("spaApp", []);
+    app.controller("index",  ['$scope', '$http', function($scope,$http) {
+        $scope.messageego = "HI";
+       $scope.SendData = function(){
+           var dataobj = {
+               alt_frontTitle: "test title",
+               alt_fronmtBody: "test text",
+               alt_frontimg: "image.svg"
+           };
+           var config = {
+               headers: {
+                   'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+               }
+           }
+           $.ajax({
+                   url: 'http://localhost/angularYii_TEMPLATE/alt-front/create',
+                   type:'get',
+                   data: dataobj
+               })
+               .success(function(data, status, header, config){
+
+                   $scope.PostDataResponse = data;
+               })
+               .error(function(data, status, header, config){
+                   $scope.PostDataResponse = "Data: " + data + "<hr>Status:" + status + "<hr>headers: " + header + "<hr>config: " + config;
+               });
+       };
+    }]);
+</script>
 </html>
 <?php $this->endPage() ?>

@@ -11,6 +11,13 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+        'altfrontmod' => [
+            'class' => 'frontend\modules\AltFront\AltFront',
+            'anonymousComments' => false,
+        ],
+
+    ],
     'components' => [
         // here you can set theme used for your frontend application 
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'

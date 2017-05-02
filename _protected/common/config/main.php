@@ -32,6 +32,14 @@ return [
             'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'AltFront']
+            ]
+        ],
+        'request' => [
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ]
         ],
         'session' => [
             'class' => 'yii\web\DbSession',

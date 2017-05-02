@@ -84,7 +84,7 @@ class Controller extends \yii\web\Controller
      */
     protected function verbs()
     {
-        return [];
+        return ['GET', 'HEAD', 'POST'];
     }
 
     /**

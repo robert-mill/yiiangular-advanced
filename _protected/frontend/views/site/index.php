@@ -1,32 +1,47 @@
 <?php
 
 /* @var $this yii\web\View */
-$this->title = Yii::t('app', Yii::$app->name);
+use frontend\models\AltFront;
 
+$this->title = Yii::t('app', Yii::$app->name);
+$altfrontClass = new AltFront();
+$altfrontData = $altfrontClass->find()->all();
 ?>
 <div class="site-index section">
 
-    <div class="jumbotron row">
+    <div class="jumbotron row" >
         <div class="col-xs-12">
 
             <div id="myCarousel" class="carousel slide col-lg-7 col-md-7 col-sm-6 col-xs-12" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <?php
+                    $i=0;
+                    foreach ($altfrontData as $data1):?>
+                    <?php if($i===0):?>
+                        <li data-target="#myCarousel" data-slide-to="<?=$i?>" class="active"></li>
+                    <?php else: ?>
+                        <li data-target="#myCarousel" data-slide-to="<?=$i?>"></li>
+                    <?php endif;?>
+                    <?php
+                    $i++;
+                    endforeach;?>
                 </ol>
                 <div class="carousel-inner">
+                    <?php $i=0; foreach ($altfrontData as $data2): ?>
+                        <?php if($i===0):?>
                     <div class="item active">
-                        <img src="<?=Yii::getAlias('@web')?>/assets/images/teacher-woods.svg" alt="Diversity" style="width:100%;">
+                        <img src="<?=Yii::getAlias('@web')?>/assets/images/<?=$data2->alt_frontimg?>" alt="Diversity" style="width:100%;">
                     </div>
+                         <?php else:?>
+                        <div class="item">
+                            <img src="<?=Yii::getAlias('@web')?>/assets/images/<?=$data2->alt_frontimg?>" alt="Diversity" style="width:100%;">
+                        </div>
+                        <?php endif;?>
 
-                    <div class="item">
-                        <img src="<?=Yii::getAlias('@web')?>/assets/images/dedicated.svg" alt="Dedication" style="width:100%;">
-                    </div>
+                    <?php $i++; endforeach;?>
 
-                    <div class="item">
-                        <img src="<?=Yii::getAlias('@web')?>/assets/images/byexample.svg" alt="Versitle" style="width:100%;">
-                    </div>
+
+
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -37,8 +52,12 @@ $this->title = Yii::t('app', Yii::$app->name);
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="ccol-lg-5 col-md-5 col-sm-6 col-xs-12">
-
+            <div class="ccol-lg-5 col-md-5 col-sm-6 col-xs-12">{{messageego}}
+                <ul>
+                    <li ng-repeat="product in products">{{product}}</li>
+                </ul>
+                <button ng-click="SendData()">Send</button>
+                {{PostDataResponse}}
             </div>
         </div>
 
@@ -95,4 +114,8 @@ $this->title = Yii::t('app', Yii::$app->name);
 
     </div>
 </div>
+
+
+
+
 
