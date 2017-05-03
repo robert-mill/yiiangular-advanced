@@ -24,6 +24,10 @@ class ComposerStaticInite9286886db8c0d0dec8a8379a08a41ac
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        'r' => 
+        array (
+            'richardfan\\widget\\' => 18,
+        ),
         'n' => 
         array (
             'nenad\\passwordStrength\\' => 23,
@@ -79,6 +83,10 @@ class ComposerStaticInite9286886db8c0d0dec8a8379a08a41ac
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'richardfan\\widget\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/richardfan1126/yii2-js-register',
         ),
         'nenad\\passwordStrength\\' => 
         array (

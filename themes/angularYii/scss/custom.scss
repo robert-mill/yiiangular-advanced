@@ -1,18 +1,55 @@
+@import "colours";
+@import "mixins";
 body{
   background-color: transparent;
   .wrap{
+    .nav{
+    }
+    .navbar-default{
+      background-color: $color-white;
+      background-image:none;
+      @include leafGreenBackground('#FFFFFF', '#124C4B');
+      background-position: 0px 0px;
+      background-image: url(../images/banners/bannerbkGrnd.png);
+      background-repeat: repeat-x;
+      background-size: 10px, 100%;
+      .container{
+        background-image:none;
+        width: 98%;
+        height: 100%;
+        z-index: 0;
+        background-image: url(../images/banners/schools.png);
+        background-position: 0px 0px;
+        background-repeat: repeat-x;
+      }
+    }
     .container{
+      .breadcrumb{
+        position: relative;
+        z-index: 100!important;
+        background: #fff;
+        padding: 10px;
+        border: 2px solid;
+      }
+      .teacher-reg-index{
+        position: relative;
+        z-index: 100!important;
+        background: #fff;
+        padding: 10px;
+        border: 2px solid;
+      }
         .site-index{
           .jumbotron{
-            z-index: 999!important;
+            z-index: 200!important;
             position: relative;
             background-color: rgba(255,255,255,0.7);
           }
         }
+
     }
   }
-
 }
+
 .cb-slideshow,
 .cb-slideshow:after {
   position: fixed;
@@ -354,4 +391,7 @@ body{
 @media screen and (max-width: 600px) {
   .cb-slideshow li div h3 { font-size: 50px }
 }
+
+
+
 

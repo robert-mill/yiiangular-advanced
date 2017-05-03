@@ -29,15 +29,24 @@ class AppAsset extends AssetBundle
 
     public $css = [
         'css/site.css',
-        'css/custom.css',
+
+        '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css',
         'js\angular\angular\angular-csp.css',
+        'css/custom.css',
     ];
     public $js = [
+        'http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCmPwt0aGdI8MJF1DwjRdlva610ntM67zs&sensor=false',
+
         'js\modernizr.custom.86080.js',
+
         'js\angular\angular\angular.min.js',
         'js\angular\angular-animate\angular-animate.min.js',
         'js\angular\angular-route\angular-route.min.js',
         'js\app.js',
+
+        //'auto\ngAutocomplete.js',
+       // 'auto\script.js',
+
     ];
     
     public $depends = [

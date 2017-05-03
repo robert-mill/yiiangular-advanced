@@ -1,0 +1,64 @@
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -border-radius:$radius;
+    -ms-border-radius:$radius;
+}
+@mixin border-radius-top($radius){
+    -webkit-border-radius: $radius $radius 0 0;
+    -moz-border-radius: $radius $radius 0 0;
+    -border-radius: $radius $radius 0 0;
+    -ms-border-radius: $radius $radius 0 0;
+}
+@mixin border-radius-bottom($radius){
+    -webkit-border-radius: 0 0 $radius $radius;
+    -moz-border-radius: 0 0 $radius $radius;
+    -border-radius: 0 0 $radius $radius;
+    -ms-border-radius: 0 0 $radius $radius;
+}
+
+
+@mixin leafGreenBackground($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin dustyGreenBackgroundHor(){ background: #124c4b; /* Old browsers */
+    background: -moz-linear-gradient(top, #124c4b 0%, #ffffff 51%, #ffffff 51%, #ffffff 51%, #124c4b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #124c4b 0%,#ffffff 51%,#ffffff 51%,#ffffff 51%,#124c4b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #124c4b 0%,#ffffff 51%,#ffffff 51%,#ffffff 51%,#124c4b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#124c4b', endColorstr='#124c4b',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+
+
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: "fonts/" + $family + "/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+            }
+            @else {
+                family: "#{$style-name}";
+                weight: normal;
+            }
+        }
+    }
+}
+

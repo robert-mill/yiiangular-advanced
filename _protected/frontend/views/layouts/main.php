@@ -19,6 +19,8 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+
+
     <?php $this->head() ?>
 </head>
 
@@ -69,12 +71,42 @@ AppAsset::register($this);
             // display Logout to all logged in users
             else 
             {
+
+                $menuItems[] = [
+                    'label' => 'Jobs Zone',
+                    'url' => 'job-home',
+                    'items' => [
+                        [
+                            'label' => 'Teacher Registration',
+                            'url' => '/teacher-post-reg',
+                        ],
+                        [
+                            'label' => 'Primary Education',
+                            'url' => '/school-posts?s=1',
+                        ],
+                        [
+                            'label' => 'Secondary Education',
+                            'url' => '/school-posts?s=2',
+                        ],
+                        [
+                            'label' => 'Further Education',
+                            'url' => '/school-posts?s=3',
+                        ],
+                        [
+                            'label' => 'SEN',
+                            'url' => '/school-posts?s=4',
+                        ]
+                    ]
+                ];
+
                 $menuItems[] = [
                     'label' => Yii::t('app', 'Logout'). ' (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
                     'linkOptions' => ['data-method' => 'post']
                 ];
             }
+
+
            
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
@@ -132,5 +164,7 @@ AppAsset::register($this);
        };
     }]);
 </script>
+<script src="http://localhost/angularYii_TEMPLATE/themes/angularYii/auto/ngAutocomplete.js"></script>
+<script src="http://localhost/angularYii_TEMPLATE/themes/angularYii/auto/script.js"></script>
 </html>
 <?php $this->endPage() ?>

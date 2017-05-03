@@ -1,1 +1,504 @@
-body{background-color:transparent}body .wrap .container .site-index .jumbotron{z-index:999 !important;position:relative;background-color:rgba(255,255,255,0.7)}.cb-slideshow,.cb-slideshow:after{position:fixed;width:100%;height:100%;top:0px;left:0px;z-index:0}.cb-slideshow:after{content:'';background:transparent url(../images/pattern.png) repeat top left}.cb-slideshow li span{width:100%;height:100%;position:absolute;top:0px;left:0px;color:transparent;background-size:cover;background-position:50% 50%;background-repeat:none;opacity:0;z-index:0;-webkit-backface-visibility:hidden;-webkit-animation:imageAnimation 36s linear infinite 0s;-moz-animation:imageAnimation 36s linear infinite 0s;-o-animation:imageAnimation 36s linear infinite 0s;-ms-animation:imageAnimation 36s linear infinite 0s;animation:imageAnimation 36s linear infinite 0s}.cb-slideshow li div{z-index:1000;position:absolute;bottom:30px;left:0px;width:100%;text-align:center;opacity:0;-webkit-animation:titleAnimation 36s linear infinite 0s;-moz-animation:titleAnimation 36s linear infinite 0s;-o-animation:titleAnimation 36s linear infinite 0s;-ms-animation:titleAnimation 36s linear infinite 0s;animation:titleAnimation 36s linear infinite 0s}.cb-slideshow li div h3{font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;font-size:240px;padding:0;line-height:200px;color:rgba(255,255,255,0.8)}.cb-slideshow li:nth-child(1) span{background-image:url(../images/1.jpg)}.cb-slideshow li:nth-child(2) span{background-image:url(../images/2.jpg);-webkit-animation-delay:6s;-moz-animation-delay:6s;-o-animation-delay:6s;-ms-animation-delay:6s;animation-delay:6s}.cb-slideshow li:nth-child(3) span{background-image:url(../images/3.jpg);-webkit-animation-delay:12s;-moz-animation-delay:12s;-o-animation-delay:12s;-ms-animation-delay:12s;animation-delay:12s}.cb-slideshow li:nth-child(4) span{background-image:url(../images/4.jpg);-webkit-animation-delay:18s;-moz-animation-delay:18s;-o-animation-delay:18s;-ms-animation-delay:18s;animation-delay:18s}.cb-slideshow li:nth-child(5) span{background-image:url(../images/5.jpg);-webkit-animation-delay:24s;-moz-animation-delay:24s;-o-animation-delay:24s;-ms-animation-delay:24s;animation-delay:24s}.cb-slideshow li:nth-child(6) span{background-image:url(../images/6.jpg);-webkit-animation-delay:30s;-moz-animation-delay:30s;-o-animation-delay:30s;-ms-animation-delay:30s;animation-delay:30s}.cb-slideshow li:nth-child(2) div{-webkit-animation-delay:6s;-moz-animation-delay:6s;-o-animation-delay:6s;-ms-animation-delay:6s;animation-delay:6s}.cb-slideshow li:nth-child(3) div{-webkit-animation-delay:12s;-moz-animation-delay:12s;-o-animation-delay:12s;-ms-animation-delay:12s;animation-delay:12s}.cb-slideshow li:nth-child(4) div{-webkit-animation-delay:18s;-moz-animation-delay:18s;-o-animation-delay:18s;-ms-animation-delay:18s;animation-delay:18s}.cb-slideshow li:nth-child(5) div{-webkit-animation-delay:24s;-moz-animation-delay:24s;-o-animation-delay:24s;-ms-animation-delay:24s;animation-delay:24s}.cb-slideshow li:nth-child(6) div{-webkit-animation-delay:30s;-moz-animation-delay:30s;-o-animation-delay:30s;-ms-animation-delay:30s;animation-delay:30s}@-webkit-keyframes imageAnimation{0%{opacity:0;-webkit-animation-timing-function:ease-in}8%{opacity:1;-webkit-transform:scale(1.05);-webkit-animation-timing-function:ease-out}17%{opacity:1;-webkit-transform:scale(1.1)}25%{opacity:0;-webkit-transform:scale(1.1)}100%{opacity:0}}@-moz-keyframes imageAnimation{0%{opacity:0;-moz-animation-timing-function:ease-in}8%{opacity:1;-moz-transform:scale(1.05);-moz-animation-timing-function:ease-out}17%{opacity:1;-moz-transform:scale(1.1)}25%{opacity:0;-moz-transform:scale(1.1)}100%{opacity:0}}@-o-keyframes imageAnimation{0%{opacity:0;-o-animation-timing-function:ease-in}8%{opacity:1;-o-transform:scale(1.05);-o-animation-timing-function:ease-out}17%{opacity:1;-o-transform:scale(1.1)}25%{opacity:0;-o-transform:scale(1.1)}100%{opacity:0}}@-ms-keyframes imageAnimation{0%{opacity:0;-ms-animation-timing-function:ease-in}8%{opacity:1;-ms-transform:scale(1.05);-ms-animation-timing-function:ease-out}17%{opacity:1;-ms-transform:scale(1.1)}25%{opacity:0;-ms-transform:scale(1.1)}100%{opacity:0}}@keyframes imageAnimation{0%{opacity:0;animation-timing-function:ease-in}8%{opacity:1;transform:scale(1.05);animation-timing-function:ease-out}17%{opacity:1;transform:scale(1.1)}25%{opacity:0;transform:scale(1.1)}100%{opacity:0}}@-webkit-keyframes titleAnimation{0%{opacity:0;-webkit-transform:translateY(200px)}8%{opacity:1;-webkit-transform:translateY(0px)}17%{opacity:1;-webkit-transform:scale(1)}19%{opacity:0}25%{opacity:0;-webkit-transform:scale(10)}100%{opacity:0}}@-moz-keyframes titleAnimation{0%{opacity:0;-moz-transform:translateY(200px)}8%{opacity:1;-moz-transform:translateY(0px)}17%{opacity:1;-moz-transform:scale(1)}19%{opacity:0}25%{opacity:0;-moz-transform:scale(10)}100%{opacity:0}}@-o-keyframes titleAnimation{0%{opacity:0;-o-transform:translateY(200px)}8%{opacity:1;-o-transform:translateY(0px)}17%{opacity:1;-o-transform:scale(1)}19%{opacity:0}25%{opacity:0;-o-transform:scale(10)}100%{opacity:0}}@-ms-keyframes titleAnimation{0%{opacity:0;-ms-transform:translateY(200px)}8%{opacity:1;-ms-transform:translateY(0px)}17%{opacity:1;-ms-transform:scale(1)}19%{opacity:0}25%{opacity:0;-webkit-transform:scale(10)}100%{opacity:0}}@keyframes titleAnimation{0%{opacity:0;transform:translateY(200px)}8%{opacity:1;transform:translateY(0px)}17%{opacity:1;transform:scale(1)}19%{opacity:0}25%{opacity:0;transform:scale(10)}100%{opacity:0}}.no-cssanimations .cb-slideshow li span{opacity:1}@media screen and (max-width: 1140px){.cb-slideshow li div h3{font-size:100px}}@media screen and (max-width: 600px){.cb-slideshow li div h3{font-size:50px}}
+/* line 3, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+body {
+  background-color: transparent;
+}
+
+/* line 8, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+body .wrap .navbar-default {
+  background-color: #ffffff;
+  background-image: none;
+  background: "#FFFFFF";
+  /* Old browsers */
+  background: -moz-linear-gradient(top, "#FFFFFF" 0%, "#124C4B" 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, "#FFFFFF"), color-stop(100%, "#124C4B"));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, "#FFFFFF" 0%, "#124C4B" 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, "#FFFFFF" 0%, "#124C4B" 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, "#FFFFFF" 0%, "#124C4B" 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, "#FFFFFF" 0%, "#124C4B" 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  background-position: 0px 0px;
+  background-image: url(../images/banners/bannerbkGrnd.png);
+  background-repeat: repeat-x;
+  background-size: 10px, 100%;
+}
+
+/* line 16, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+body .wrap .navbar-default .container {
+  background-image: none;
+  width: 98%;
+  height: 100%;
+  z-index: 0;
+  background-image: url(../images/banners/schools.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+}
+
+/* line 27, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+body .wrap .container .breadcrumb {
+  position: relative;
+  z-index: 100 !important;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid;
+}
+
+/* line 34, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+body .wrap .container .teacher-reg-index {
+  position: relative;
+  z-index: 100 !important;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid;
+}
+
+/* line 42, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+body .wrap .container .site-index .jumbotron {
+  z-index: 200 !important;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 53, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+/* line 62, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow:after {
+  content: '';
+  background: transparent url(../images/pattern.png) repeat top left;
+}
+
+/* line 66, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: imageAnimation 36s linear infinite 0s;
+  -moz-animation: imageAnimation 36s linear infinite 0s;
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  -ms-animation: imageAnimation 36s linear infinite 0s;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+/* line 85, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li div {
+  z-index: 1000;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: titleAnimation 36s linear infinite 0s;
+  -moz-animation: titleAnimation 36s linear infinite 0s;
+  -o-animation: titleAnimation 36s linear infinite 0s;
+  -ms-animation: titleAnimation 36s linear infinite 0s;
+  animation: titleAnimation 36s linear infinite 0s;
+}
+
+/* line 99, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li div h3 {
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  font-size: 240px;
+  padding: 0;
+  line-height: 200px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 106, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(1) span {
+  background-image: url(../images/1.jpg);
+}
+
+/* line 107, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(2) span {
+  background-image: url(../images/2.jpg);
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+/* line 115, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(3) span {
+  background-image: url(../images/3.jpg);
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+/* line 123, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(4) span {
+  background-image: url(../images/4.jpg);
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+/* line 131, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(5) span {
+  background-image: url(../images/5.jpg);
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s;
+}
+
+/* line 139, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(6) span {
+  background-image: url(../images/6.jpg);
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+/* line 147, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(2) div {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+/* line 154, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(3) div {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+/* line 161, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(4) div {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+/* line 168, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(5) div {
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  -ms-animation-delay: 24s;
+  animation-delay: 24s;
+}
+
+/* line 175, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.cb-slideshow li:nth-child(6) div {
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -webkit-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -moz-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -moz-transform: scale(1.05);
+    -moz-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    -moz-transform: scale(1.1);
+  }
+  25% {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -o-animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    -o-transform: scale(1.05);
+    -o-animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    -o-transform: scale(1.1);
+  }
+  25% {
+    opacity: 0;
+    -o-transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes imageAnimation {
+  /* line 244, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  0% {
+    opacity: 0;
+    -ms-animation-timing-function: ease-in;
+  }
+  /* line 248, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  8% {
+    opacity: 1;
+    -ms-transform: scale(1.05);
+    -ms-animation-timing-function: ease-out;
+  }
+  /* line 253, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  17% {
+    opacity: 1;
+    -ms-transform: scale(1.1);
+  }
+  /* line 257, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  25% {
+    opacity: 0;
+    -ms-transform: scale(1.1);
+  }
+  /* line 261, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  25% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation for the title */
+@-webkit-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+  }
+  8% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  19% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: scale(10);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(200px);
+  }
+  8% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+  19% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    -moz-transform: scale(10);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(200px);
+  }
+  8% {
+    opacity: 1;
+    -o-transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -o-transform: scale(1);
+  }
+  19% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    -o-transform: scale(10);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes titleAnimation {
+  /* line 345, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(200px);
+  }
+  /* line 349, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  8% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  /* line 353, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  17% {
+    opacity: 1;
+    -ms-transform: scale(1);
+  }
+  /* line 357, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  19% {
+    opacity: 0;
+  }
+  /* line 358, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  25% {
+    opacity: 0;
+    -webkit-transform: scale(10);
+  }
+  /* line 362, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  8% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  19% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    transform: scale(10);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Show at least something when animations not supported */
+/* line 385, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {
+  /* line 389, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  .cb-slideshow li div h3 {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 392, C:/xampp/htdocs/angularYii_TEMPLATE/themes/angularYii/scss/custom.scss */
+  .cb-slideshow li div h3 {
+    font-size: 50px;
+  }
+}
+
+/*# sourceMappingURL=../css/custom.map */

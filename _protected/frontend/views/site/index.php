@@ -2,17 +2,20 @@
 
 /* @var $this yii\web\View */
 use frontend\models\AltFront;
+use frontend\models\Front;
 
 $this->title = Yii::t('app', Yii::$app->name);
 $altfrontClass = new AltFront();
 $altfrontData = $altfrontClass->find()->all();
+$frontClass = new Front();
+$frontData = $frontClass->find()->all();
 ?>
 <div class="site-index section">
 
     <div class="jumbotron row" >
         <div class="col-xs-12">
 
-            <div id="myCarousel" class="carousel slide col-lg-7 col-md-7 col-sm-6 col-xs-12" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide col-lg-12 col-md-12 col-sm-6 col-xs-12" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <?php
                     $i=0;
@@ -28,13 +31,35 @@ $altfrontData = $altfrontClass->find()->all();
                 </ol>
                 <div class="carousel-inner">
                     <?php $i=0; foreach ($altfrontData as $data2): ?>
-                        <?php if($i===0):?>
-                    <div class="item active">
-                        <img src="<?=Yii::getAlias('@web')?>/assets/images/<?=$data2->alt_frontimg?>" alt="Diversity" style="width:100%;">
-                    </div>
+                            <?php if($i===0):?>
+                        <div class="item active">
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                <img src="<?=Yii::getAlias('@web')?>/assets/images/<?=$data2->alt_frontimg?>" alt="Diversity" style="width:100%;">
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                    <?php if($data2->alt_frontTitle&&$data2->alt_frontTitle!==""): ?>
+                                        <h3><?=$data2->alt_frontTitle?></h3>
+                                        <p><?=$data2->alt_fronmtBody?></p>
+                                    <?php else:?>
+                                        <p style="background: rgba(255,255,255,1.0); padding: 4px; color:rgba(0,0,0,1.0); "><?=$data2->alt_fronmtBody?></p>
+                                    <?php endif;?>
+
+                                </div>
+                        </div>
                          <?php else:?>
                         <div class="item">
-                            <img src="<?=Yii::getAlias('@web')?>/assets/images/<?=$data2->alt_frontimg?>" alt="Diversity" style="width:100%;">
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                                <img src="<?=Yii::getAlias('@web')?>/assets/images/<?=$data2->alt_frontimg?>" alt="Diversity" style="width:100%;">
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                                <?php if($data2->alt_frontTitle&&$data2->alt_frontTitle!==""): ?>
+                                    <h3><?=$data2->alt_frontTitle?></h3>
+                                    <p><?=$data2->alt_fronmtBody?></p>
+                                <?php else:?>
+                                    <p style="background: rgba(255,255,255,1.0); padding: 4px; color:rgba(0,0,0,1.0); "><?=$data2->alt_fronmtBody?></p>
+                                <?php endif;?>
+
+                            </div>
                         </div>
                         <?php endif;?>
 
@@ -52,67 +77,27 @@ $altfrontData = $altfrontClass->find()->all();
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="ccol-lg-5 col-md-5 col-sm-6 col-xs-12">{{messageego}}
-                <ul>
-                    <li ng-repeat="product in products">{{product}}</li>
-                </ul>
-                <button ng-click="SendData()">Send</button>
-                {{PostDataResponse}}
-            </div>
+
         </div>
 
     </div>
 
-    <div class="body-content">
+   <!-- <div class="body-content">
 
         <div class="row">
-            <div class="col-lg-3">
-                <h3>Yii documentation</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
+            <?php foreach ($frontData as $fd):?>
+            <div class="col-lg-4">
+                <h3><?=$fd->home_title ?></h3>
+                <p><?=$fd->home_body?></p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
-            <div class="col-lg-3">
-                <h3>Yii forum</h3>
+            <?php endforeach;?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-3">
-                <h3>Yii extensions</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-            <div class="col-lg-3">
-                <h3>Freetuts.org</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.freetuts.org/">Freetuts.org &raquo;</a></p>
-            </div>
         </div>
 
-    </div>
+    </div>-->
 </div>
 
 

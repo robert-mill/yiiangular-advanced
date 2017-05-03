@@ -84,4 +84,13 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'richardfan1126/yii2-js-register' => 
+  array (
+    'name' => 'richardfan1126/yii2-js-register',
+    'version' => '0.0.1.0',
+    'alias' => 
+    array (
+      '@richardfan/widget' => $vendorDir . '/richardfan1126/yii2-js-register',
+    ),
+  ),
 );
